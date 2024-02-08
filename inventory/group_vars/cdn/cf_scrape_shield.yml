@@ -1,0 +1,7 @@
+---
+cf_scrape_shield:
+  - zone_id: "{{ _cf_zone_id[cf_zone] }}"
+    email_obfuscation: true
+    hotlink_protection: true
+    server_side_exclude: true
+...

@@ -1,0 +1,56 @@
+---
+cf_dns:
+  - zone: "{{ cf_zone }}"
+    records:
+      - record: '@'
+        proxied: true
+        type: A
+        value: 8.8.8.8
+
+      - record: protonmail2._domainkey
+        proxied: false
+        type: CNAME
+        value: protonmail2.domainkey.dirpmsb4uyjwnznmfizxx6sfvyr6lrbc2oso53nbrsg43u6mic74a.domains.proton.ch
+
+      - record: protonmail3._domainkey
+        proxied: false
+        type: CNAME
+        value: protonmail3.domainkey.dirpmsb4uyjwnznmfizxx6sfvyr6lrbc2oso53nbrsg43u6mic74a.domains.proton.ch
+
+      - record: protonmail._domainkey
+        proxied: false
+        type: CNAME
+        value: protonmail.domainkey.dirpmsb4uyjwnznmfizxx6sfvyr6lrbc2oso53nbrsg43u6mic74a.domains.proton.ch
+
+      - record: www
+        proxied: true
+        type: CNAME
+        value: "{{ cf_zone }}"
+
+      - record: '@'
+        priority: 20
+        proxied: false
+        type: MX
+        value: mailsec.protonmail.ch
+
+      - record: '@'
+        priority: 10
+        proxied: false
+        type: MX
+        value: mail.protonmail.ch
+
+      - record: _dmarc
+        proxied: false
+        type: TXT
+        value: 'v=DMARC1; p=quarantine;'
+
+      - record: '@'
+        proxied: false
+        type: TXT
+        value: 'v=spf1 include:_spf.protonmail.ch mx ~all'
+
+      - record: '@'
+        proxied: false
+        type: TXT
+        value: protonmail-verification=5038331d57c4d6cec7d634383729aa8a5a5e7beb
+...

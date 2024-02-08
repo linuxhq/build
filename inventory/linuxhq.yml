@@ -1,0 +1,31 @@
+---
+all:
+  children:
+    linuxhq:
+      children:
+        cdn:
+          vars:
+            ansible_connection: local
+          children:
+            comm:
+              hosts:
+                nonexistent.sh:
+                taylorkimball.com:
+                undeliverable.mx:
+            mgmt:
+              hosts:
+                linuxhq.net:
+                linuxhq.org:
+        servers:
+          vars:
+            ansible_connection: ssh
+          children:
+            el:
+              hosts:
+                fs1.linuxhq.net:
+                fs2.linuxhq.net:
+            lt:
+              hosts:
+                oh1.linuxhq.net:
+                pn1.linuxhq.net:
+...

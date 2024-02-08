@@ -1,0 +1,16 @@
+---
+chrony_conf:
+  - authselectmode require
+  - cmdport 0
+  - hwtimestamp *
+  - log measurements statistics tracking
+  - driftfile /var/lib/chrony/drift
+  - logdir /var/log/chrony
+  - makestep 1.0 3
+  - minsources 2
+  - rtcsync
+  - server ntppool1.time.nl iburst nts
+  - server ntppool2.time.nl iburst nts
+chrony_options:
+  - '-F 1'
+...

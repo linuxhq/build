@@ -1,0 +1,32 @@
+---
+homebrew_installed_packages:
+  - cloudflared
+  - gnupg
+  - imagemagick
+  - inetutils
+  - ipcalc
+  - java
+  - mas
+  - nmap
+  - pwgen
+  - p7zip
+  - shellcheck
+  - socat
+  - ssh-copy-id
+  - tree
+  - wget
+  - xz
+homebrew_taps:
+  - beeftornado/rmtree
+homebrew_cask_apps:
+  - 1password
+  - discord
+  - docker
+  - firefox
+  - inkscape
+  - microsoft-office
+  - parallels
+  - sync
+  - vlc
+  - zoom
+...

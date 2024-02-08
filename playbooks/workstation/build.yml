@@ -1,0 +1,20 @@
+---
+- hosts: workstation
+  collections:
+    - linuxhq.macos
+  roles:
+    - geerlingguy.dotfiles
+    - geerlingguy.mac.homebrew
+    - linuxhq.macos.adguard
+    - linuxhq.macos.appzapper
+    - linuxhq.macos.hermes
+    - linuxhq.macos.irssi
+    - linuxhq.macos.iterm2
+    - linuxhq.macos.liquidprompt
+    - linuxhq.macos.monitorcontrol
+    - linuxhq.macos.privoxy
+    - linuxhq.macos.protonvpn
+    - linuxhq.macos.shell_proxy
+    - linuxhq.macos.sizeup
+    - linuxhq.macos.textual
+...

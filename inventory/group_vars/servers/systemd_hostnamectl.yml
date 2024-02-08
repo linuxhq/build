@@ -1,0 +1,5 @@
+---
+systemd_hostnamectl_deployment: production
+systemd_hostnamectl_hostname: "{{ inventory_hostname }}"
+systemd_hostnamectl_icon_name: computer-server
+...

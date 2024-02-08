@@ -1,0 +1,11 @@
+---
+iam_users:
+  - name: kopia
+    purge_policies: true
+
+  - name: linuxhq
+    purge_policies: true
+
+  - name: molecule
+    purge_policies: true
+...

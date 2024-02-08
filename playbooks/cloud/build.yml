@@ -1,0 +1,12 @@
+---
+- hosts: cloud
+  collections:
+    - linuxhq.aws
+  roles:
+    - linuxhq.aws.iam_user
+    - linuxhq.aws.iam_group
+    - linuxhq.aws.vpc
+    - linuxhq.aws.internet_gateway
+    - linuxhq.aws.subnet
+    - linuxhq.aws.route_table
+...

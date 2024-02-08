@@ -1,0 +1,75 @@
+---
+textual_defaults:
+  - key: Appearance
+    type: int
+    value: 2
+  - key: CopyTextSelectionOnMouseUp
+    type: bool
+    value: true
+  - key: "DefaultIdentity -> AwayNickkey"
+    type: string
+    value: "{{ ansible_env.USER }}"
+  - key: "DefaultIdentity -> Nickkey"
+    type: string
+    value: "{{ ansible_env.USER }}"
+  - key: "DefaultIdentity -> Realkey"
+    type: string
+    value: 'Taylor Kimball'
+  - key: "DefaultIdentity -> Userkey"
+    type: string
+    value: "{{ ansible_env.USER }}"
+  - key: InvertSidebarColors
+    type: bool
+    value: true
+  - key: "Keyboard -> Tab Key Completion Suffix"
+    type: string
+    value: ", "
+  - key: MemberListSortFavorsServerStaff
+    type: bool
+    value: true
+  - key: NickkeyColorHashingComputesRGBValue
+    type: bool
+    value: true
+  - key: RejoinChannelOnLocalKick
+    type: bool
+    value: true
+  - key: ReloadScrollbackOnLaunch
+    type: bool
+    value: false
+  - key: ReplyUnignoredExternalCTCPRequests
+    type: int
+    value: 0
+  - key: SUAutomaticallyUpdate
+    type: bool
+    value: true
+  - key: SUEnableAutomaticChecks
+    type: bool
+    value: true
+  - key: SUHasLaunchedBefore
+    type: bool
+    value: true
+  - key: SUSendProfileInfo
+    type: bool
+    value: false
+  - key: SUUpdateRelaunchingMarker
+    type: bool
+    value: false
+  - key: ServerListDoubleClickConnectServer
+    type: bool
+    value: true
+  - key: ServerListDoubleClickDisconnectServer
+    type: bool
+    value: true
+  - key: ServerListDoubleClickJoinChannel
+    type: bool
+    value: true
+  - key: ServerListDoubleClickLeaveChannel
+    type: bool
+    value: true
+  - key: TextFieldAutomaticGrammarCheck
+    type: bool
+    value: false
+  - key: TextFieldAutomaticSpellCheck
+    type: int
+    value: 1
+...

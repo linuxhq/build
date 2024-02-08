@@ -1,0 +1,16 @@
+---
+collections:
+  - name: geerlingguy.mac
+    version: '*'
+  - name: linuxhq.aws
+    version: '*'
+  - name: linuxhq.cloudflare
+    version: '*'
+  - name: linuxhq.linux
+    version: '*'
+  - name: linuxhq.macos
+    version: '*'
+
+roles:
+  - name: geerlingguy.dotfiles
+...

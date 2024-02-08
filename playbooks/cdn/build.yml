@@ -1,0 +1,20 @@
+---
+- hosts: cdn
+  roles:
+    - linuxhq.cloudflare.zone
+    - linuxhq.cloudflare.ssl
+    - linuxhq.cloudflare.security
+    - linuxhq.cloudflare.network
+    - linuxhq.cloudflare.scrape_shield
+    - linuxhq.cloudflare.page_rule
+    - linuxhq.cloudflare.rule_list
+    - linuxhq.cloudflare.ruleset_entrypoint
+    - linuxhq.cloudflare.tunnel
+    - linuxhq.cloudflare.access_service_token
+    - linuxhq.cloudflare.access_group
+    - linuxhq.cloudflare.access_app
+    - linuxhq.cloudflare.access_policy
+    - linuxhq.cloudflare.pages_project
+    - linuxhq.cloudflare.pages_domain
+    - linuxhq.cloudflare.dns
+...

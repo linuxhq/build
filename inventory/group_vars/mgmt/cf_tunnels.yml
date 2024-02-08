@@ -1,0 +1,18 @@
+---
+cf_tunnels:
+  - name: "{{ cf_tunnel_fs1 }}"
+    config_src: local
+    tunnel_secret: "{{ cf_tunnel_secret }}"
+
+  - name: "{{ cf_tunnel_fs2 }}"
+    config_src: local
+    tunnel_secret: "{{ cf_tunnel_secret }}"
+
+  - name: "{{ cf_tunnel_oh1 }}"
+    config_src: local
+    tunnel_secret: "{{ cf_tunnel_secret }}"
+
+  - name: "{{ cf_tunnel_pn1 }}"
+    config_src: local
+    tunnel_secret: "{{ cf_tunnel_secret }}"
+...

@@ -1,0 +1,9 @@
+---
+cf_ssl:
+  - zone_id: "{{ _cf_zone_id[cf_zone] }}"
+    always_use_https: true
+    automatic_https_rewrites: true
+    min_tls_version: 1.3
+    opportunistic_encryption: true
+    mode: strict
+...

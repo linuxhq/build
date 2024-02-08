@@ -1,0 +1,5 @@
+---
+shell_proxy_ftp: true
+shell_proxy_http: false
+shell_proxy_https: false
+...

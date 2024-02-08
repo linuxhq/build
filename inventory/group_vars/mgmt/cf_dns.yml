@@ -1,0 +1,54 @@
+---
+cf_dns:
+  - zone: "{{ cf_zone }}"
+    records:
+      - record: '@'
+        proxied: true
+        type: A
+        value: 8.8.8.8
+
+      - record: irc
+        proxied: false
+        type: CNAME
+        value: irc.libera.chat
+
+      - record: fs1
+        proxied: true
+        type: CNAME
+        value: "{{ _cf_tunnel_id[cf_tunnel_fs1] ~ '.cfargotunnel.com' }}"
+
+      - record: fs2
+        proxied: true
+        type: CNAME
+        value: "{{ _cf_tunnel_id[cf_tunnel_fs2] ~ '.cfargotunnel.com' }}"
+
+      - record: oh1
+        proxied: true
+        type: CNAME
+        value: "{{ _cf_tunnel_id[cf_tunnel_oh1] ~ '.cfargotunnel.com' }}"
+
+      - record: pn1
+        proxied: true
+        type: CNAME
+        value: "{{ _cf_tunnel_id[cf_tunnel_pn1] ~ '.cfargotunnel.com' }}"
+
+      - record: www
+        proxied: true
+        type: CNAME
+        value: "{{ cf_zone }}"
+
+      - record: _dmarc
+        proxied: false
+        type: TXT
+        value: 'v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;'
+
+      - record: '*._domainkey'
+        proxied: false
+        type: TXT
+        value: 'v=DKIM1; p='
+
+      - record: '@'
+        proxied: false
+        type: TXT
+        value: 'v=spf1 -all'
+...

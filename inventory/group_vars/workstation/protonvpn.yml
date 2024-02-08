@@ -1,0 +1,48 @@
+---
+protonvpn_defaults:
+  - key: AutoConnect
+    type: bool
+    value: true
+  - key: ConnectOnDemand
+    type: bool
+    value: true
+  - key: Firewall
+    type: bool
+    value: false
+  - key: LaunchedBefore
+    type: bool
+    value: true
+  - key: NeagentAppeared
+    type: bool
+    value: true
+  - key: "{{ 'NetShield' + ansible_user_id }}"
+    type: int
+    value: 2
+  - key: NewBrandModalShown
+    type: bool
+    value: true
+  - key: RememberLogin
+    type: bool
+    value: true
+  - key: RememberLoginAfterUpdate
+    type: bool
+    value: true
+  - key: SUHasLaunchedBefore
+    type: bool
+    value: true
+  - key: SecureCoreToggle
+    type: bool
+    value: false
+  - key: StartMinimized
+    type: bool
+    value: true
+  - key: StartOnBoot
+    type: bool
+    value: true
+  - key: SystemNotifications
+    type: bool
+    value: true
+  - key: Welcomed
+    type: bool
+    value: true
+...

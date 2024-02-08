@@ -1,0 +1,64 @@
+---
+irssi_chatnets:
+  efnet:
+    type: IRC
+irssi_ignores:
+  - exception: false
+    level: 'CTCPS DCC'
+    mask: '*'
+irssi_scripts:
+  - name: autowhois.pl
+    base64: |
+      IyAvV0hPSVMgYWxsIHRoZSB1c2VycyB3aG8gc2VuZCB5b3UgYSBwcml2YXRlIG1lc3NhZ2UuCiMg
+      djAuOSBmb3IgaXJzc2kgYnkgQW5kcmVhcyAnYWRzJyBTY2hlcmJhdW0KIyBpZGVhIGFuZCBzb21l
+      IGNvZGUgdGFrZW4gZnJvbSBhdXRvd2hvaXMucGwgZnJvbSBUaW1vIFNpcmFpbmVuCnVzZSBzdHJp
+      Y3Q7CnVzZSBJcnNzaTsKdXNlIHZhcnMgcXcoJFZFUlNJT04gJUlSU1NJKTsgCgokVkVSU0lPTiA9
+      ICIwLjkiOwolSVJTU0kgPSAoCiAgICBhdXRob3JzCT0+ICJBbmRyZWFzIFwnYWRzXCcgU2NoZXJi
+      YXVtIiwKICAgIGNvbnRhY3QJPT4gImFkc1xAdWZwLmRlIiwKICAgIG5hbWUJPT4gImF1dG9fd2hv
+      aXMiLAogICAgZGVzY3JpcHRpb24JPT4gIi9XSE9JUyBhbGwgdGhlIHVzZXJzIHdobyBzZW5kIHlv
+      dSBhIHByaXZhdGUgbWVzc2FnZS4iLAogICAgbGljZW5zZQk9PiAiR1BMIiwKICAgIHVybAkJPT4g
+      Imh0dHA6Ly9pcnNzaS5vcmcvIiwKICAgIGNoYW5nZWQJPT4gIjIwMDQtMDItMTAiLAogICAgY2hh
+      bmdlcwk9PiAidjAuOTogZG9uJ3QgL1dIT0lTIGlmIHF1ZXJ5IGV4aXN0cyBmb3IgdGhlIG5pY2sg
+      YWxyZWFkeSIKKTsKCiMgSGlzdG9yeToKIyAgdjAuOTogZG9uJ3QgL1dIT0lTIGlmIHF1ZXJ5IGV4
+      aXN0cyBmb3IgdGhlIG5pY2sgYWxyZWFkeQojICAgICAgICBub3cgd2Ugc3RvcmUgYWxsIG5pY2tz
+      IHdlIGhhdmUgc2VlbiBpbiB0aGUgbGFzdCAxMCBtaW51dGVzCgpteSBAc2VlbiA9ICgpOwoKc3Vi
+      IG1zZ19wcml2YXRlX2ZpcnN0IHsKICBteSAoJHNlcnZlciwgJG1zZywgJG5pY2ssICRhZGRyZXNz
+      KSA9IEBfOwoKICAjIGdvIHRocm91Z2ggZXZlcnkgc3RvcmVkIGNvbm5lY3Rpb24gYW5kIHJlbW92
+      ZSwgaWYgdGltZWQgb3V0CiAgbXkgJHRpbWUgPSB0aW1lKCk7CiAgbXkgKCRjb25uZWN0aW9uKTsK
+      ICBteSBAbmV3ID0gKCk7CiAgZm9yZWFjaCAkY29ubmVjdGlvbiAoQHNlZW4pIHsKICAgIGlmICgk
+      Y29ubmVjdGlvbi0+e2xhc3R0aW1lfSA+PSAkdGltZSAtIDYwMCkgewogICAgICAjIGlzIG9rLCB1
+      c2UgaXQKICAgICAgcHVzaChAbmV3LCAkY29ubmVjdGlvbik7CiAgICAgICMgYWxsIHRpbWVkIG91
+      dCBjb25uZWN0aW9ucyB3aWxsIGJlIGRyb3BwZWQKICAgIH0gCiAgfQogIEBzZWVuID0gQG5ldzsK
+      fQoKc3ViIG1zZ19wcml2YXRlIHsKICBteSAoJHNlcnZlciwgJG1zZywgJG5pY2ssICRhZGRyZXNz
+      KSA9IEBfOwoKICAjIGxvb2ssIGlmIHdlIGFscmVhZHkga25vdyB0aGlzIGNvbm5lY3Rpb24KICBt
+      eSAoJGNvbm5lY3Rpb24sICRhKTsKICBteSAka25vd25fdG9fdXMgPSAwOwogIGZvciAoJGEgPSAw
+      OyAkYSA8PSAkI3NlZW47ICRhKyspIHsKICAgICRjb25uZWN0aW9uID0gJHNlZW5bJGFdOwogICAg
+      IyB0aGUgbGMoKSB3b3JrcyBub3QgZXhhY3QsIGJlY2F1c2UgaXJjIHVzZXMgYW5vdGhlciBjaGFy
+      c2V0CiAgICBpZiAoJGNvbm5lY3Rpb24tPntzZXJ2ZXJ9IGVxICRzZXJ2ZXItPnthZGRyZXNzfSBh
+      bmQgJGNvbm5lY3Rpb24tPntwb3J0fSBlcSAkc2VydmVyLT57cG9ydH0gYW5kIGxjKCRjb25uZWN0
+      aW9uLT57bmlja30pIGVxIGxjKCRuaWNrKSkgewogICAgICAka25vd25fdG9fdXMgPSAxOwogICAg
+      ICAjIG1hcmsgYXMgcmVmcmVzaGVkCiAgICAgICRzZWVuWyRhXS0+e2xhc3R0aW1lfSA9IHRpbWUo
+      KTsKICAgICAgbGFzdDsKICAgIH0KICB9CgogIGlmICgka25vd25fdG9fdXMgPT0gMSkgewogICAg
+      IyBhbGwgb2ssIHJldHVybgogICAgcmV0dXJuOwogIH0KCiAgIyBub3cgc3RvcmUgdGhlIG5ldyBj
+      b25uZWN0aW9uCiAgJGNvbm5lY3Rpb24gPSB7fTsKICAjIHN0b3JlIG91ciBvd24gc2VydmVyIGRh
+      dGEgaGVyZQogICRjb25uZWN0aW9uLT57c2VydmVyfSA9ICRzZXJ2ZXItPnthZGRyZXNzfTsKICAk
+      Y29ubmVjdGlvbi0+e3BvcnR9ID0gJHNlcnZlci0+e3BvcnR9OwogICMgYW5kIHRoZSBuaWNrIHdo
+      byBxdWVyaWVkIHVzCiAgJGNvbm5lY3Rpb24tPntuaWNrfSA9ICRuaWNrOwogICRjb25uZWN0aW9u
+      LT57bGFzdHRpbWV9ID0gdGltZSgpOwogICRjb25uZWN0aW9uLT57c3RhcnR0aW1lfSA9IHRpbWUo
+      KTsKICBwdXNoKEBzZWVuLCAkY29ubmVjdGlvbik7CgogICRzZXJ2ZXItPmNvbW1hbmQoIndob2lz
+      ICRuaWNrIik7Cn0KCklyc3NpOjpzaWduYWxfYWRkX2ZpcnN0KCdtZXNzYWdlIHByaXZhdGUnLCAn
+      bXNnX3ByaXZhdGVfZmlyc3QnKTsKSXJzc2k6OnNpZ25hbF9hZGQoJ21lc3NhZ2UgcHJpdmF0ZScs
+      ICdtc2dfcHJpdmF0ZScpOwo=
+irssi_servers:
+  - address: irc.efnet.net
+    autoconnect: 'yes'
+    chatnet: efnet
+    ssl_verify: 'yes'
+    use_ssl: 'yes'
+irssi_settings:
+  core:
+    nick: "{{ lookup('password', '/dev/null length=9 chars=lowercase') }}"
+    real_name: "{{ lookup('password', '/dev/null length=36 chars=ascii_letters,digits') }}"
+    user_name: "{{ lookup('password', '/dev/null length=9 chars=ascii_letters') | lower }}"
+irssi_theme: http://irssi-import.github.io/themes/initrd.theme
+...

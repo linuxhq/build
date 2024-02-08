@@ -1,0 +1,8 @@
+---
+cf_access_groups:
+  - name: "{{ cf_zone }}"
+    include:
+      - service_token:
+          token_id: "{{ _cf_access_service_token_id[cf_zone] }}"
+    is_default: false
+...

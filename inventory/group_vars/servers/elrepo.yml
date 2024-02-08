@@ -1,0 +1,6 @@
+---
+elrepo_repository_elrepo_mirrorlist: false
+elrepo_repository_elrepo_testing_mirrorlist: false
+elrepo_repository_elrepo_kernel_mirrorlist: false
+elrepo_repository_elrepo_extras_mirrorlist: false
+...

@@ -1,0 +1,39 @@
+---
+openssh_server:
+  AddressFamily: inet
+  AllowAgentForwarding: true
+  ChallengeResponseAuthentication: false
+  Ciphers: aes128-ctr,aes192-ctr,aes256-ctr
+  ClientAliveCountMax: 0
+  ClientAliveInterval: 300
+  Compression: delayed
+  GSSAPIAuthentication: false
+  GSSAPICleanupCredentials: true
+  HostbasedAuthentication: false
+  HostKey:
+    - /etc/ssh/ssh_host_ed25519_key
+  HostKeyAlgorithms: ssh-ed25519
+  IgnoreRhosts: true
+  KerberosAuthentication: false
+  ListenAddress: 127.0.0.1
+  LogLevel: INFO
+  LoginGraceTime: 30
+  MACs: hmac-sha2-256,hmac-sha2-512
+  PasswordAuthentication: false
+  PermitEmptyPasswords: false
+  PermitRootLogin: false
+  PermitUserEnvironment: false
+  PrintLastLog: true
+  PrintMotd: false
+  Port: 22
+  Protocol: 2
+  PubkeyAcceptedKeyTypes: ssh-ed25519
+  PubkeyAuthentication: true
+  StrictModes: true
+  Subsystem: sftp internal-sftp
+  SyslogFacility: AUTHPRIV
+  TCPKeepAlive: true
+  UseDNS: false
+  UsePAM: true
+  X11Forwarding: false
+...

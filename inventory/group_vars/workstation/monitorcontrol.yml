@@ -1,0 +1,36 @@
+---
+monitorcontrol_defaults:
+  - key: allScreens
+    type: bool
+    value: true
+  - key: appAlreadyLaunched
+    type: bool
+    value: true
+  - key: enableBrightnessSync
+    type: bool
+    value: true
+  - key: listenFor
+    type: int
+    value: 0
+  - key: lowerContrast
+    type: bool
+    value: false
+  - key: multiKeyboardBrightness
+    type: int
+    value: 1
+  - key: multiKeyboardVolume
+    type: int
+    value: 1
+  - key: multiSliders
+    type: int
+    value: 0
+  - key: showContrast
+    type: bool
+    value: true
+  - key: SUEnableAutomaticChecks
+    type: bool
+    value: true
+  - key: SUHasLaunchedBefore
+    type: bool
+    value: true
+...

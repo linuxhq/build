@@ -1,0 +1,42 @@
+---
+iterm2_defaults:
+  - key: AppleAntiAliasingThreshold
+    type: int
+    value: 1
+  - key: AppleScrollAnimationEnabled
+    type: int
+    value: 0
+  - key: AppleSmoothFixedFontsSizeThreshold
+    type: int
+    value: 1
+  - key: AppleWindowTabbingMode
+    type: string
+    value: manual
+  - key: NoSyncHaveWarnedAboutPasteConfirmationChange
+    type: bool
+    value: true
+  - key: NoSyncPermissionToShowTip
+    type: bool
+    value: false
+  - key: OnlyWhenMoreTabs
+    type: string
+    value: 0
+  - key: PromptOnQuit
+    type: bool
+    value: false
+  - key: SUAutomaticallyUpdate
+    type: bool
+    value: true
+  - key: SUEnableAutomaticChecks
+    type: bool
+    value: true
+  - key: SUHasLaunchedBefore
+    type: bool
+    value: true
+  - key: SUSendProfileInfo
+    type: bool
+    value: false
+  - key: TabStyleWithAutomaticOption
+    type: bool
+    value: true
+...

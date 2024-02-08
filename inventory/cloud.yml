@@ -1,0 +1,9 @@
+---
+all:
+  children:
+    cloud:
+      vars:
+        ansible_connection: local
+      hosts:
+        aws: {}
+...

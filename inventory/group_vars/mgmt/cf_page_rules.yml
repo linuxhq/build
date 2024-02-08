@@ -1,0 +1,27 @@
+---
+cf_page_rules:
+  - zone_id: "{{ _cf_zone_id[cf_zone] }}"
+    rules:
+      - actions:
+          - id: forwarding_url
+            value:
+              status_code: 301
+              url: https://github.com/linuxhq
+        priority: 1
+        targets:
+          - constraint:
+              operator: matches
+              value: "{{ cf_zone }}/*"
+            target: url
+      - actions:
+          - id: forwarding_url
+            value:
+              status_code: 301
+              url: https://github.com/linuxhq
+        priority: 1
+        targets:
+          - constraint:
+              operator: matches
+              value: "www.{{ cf_zone }}/*"
+            target: url
+...

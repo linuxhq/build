@@ -1,0 +1,30 @@
+---
+adguard_defaults:
+  - key: FilteringEnabled
+    type: bool
+    value: true
+  - key: FirstRun
+    type: bool
+    value: false
+  - key: KextAllowed
+    type: bool
+    value: true
+  - key: PopupBlockerEnabled
+    type: bool
+    value: true
+  - key: PrivacyProtectionEnabled
+    type: bool
+    value: true
+  - key: SUHasLaunchedBefore
+    type: bool
+    value: true
+  - key: SafebrowsingEnabled
+    type: bool
+    value: true
+  - key: StartAtLogin
+    type: bool
+    value: true
+  - key: WebOfTrustEnabled
+    type: bool
+    value: true
+...

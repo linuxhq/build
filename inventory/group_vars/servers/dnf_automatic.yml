@@ -1,0 +1,4 @@
+---
+dnf_automatic_commands_apply_updates: true
+dnf_automatic_timer: dnf-automatic-install.timer
+...

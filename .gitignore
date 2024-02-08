@@ -1,0 +1,5 @@
+# .gitignore
+
+galaxy_cache
+tmp
+venv

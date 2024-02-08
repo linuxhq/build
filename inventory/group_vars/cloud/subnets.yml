@@ -1,0 +1,7 @@
+---
+subnets:
+  - name: molecule-a
+    az: "{{ aws_region ~ 'a' }}"
+    cidr: 192.168.0.0/24
+    vpc_id: "{{ _vpc_id['molecule'] }}"
+...

@@ -1,0 +1,4 @@
+---
+selinux_reboot: true
+selinux_state: disabled
+...

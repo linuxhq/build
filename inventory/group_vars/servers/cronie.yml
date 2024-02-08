@@ -1,0 +1,27 @@
+---
+cronie_allow:
+  - tkimball
+
+cronie_jobs:
+  - cron_file: linuxhq
+    jobs:
+      - name: Ensure rpmnew backups are absent
+        job: '/usr/bin/find / -type f -name *.rpmnew -exec /bin/rm {} \; 2>/dev/null'
+        special_time: daily
+        user: root
+
+      - name: Ensure rpmsave backups are absent
+        job: '/usr/bin/find / -type f -name *.rpmsave -exec /bin/rm {} \; 2>/dev/null'
+        special_time: daily
+        user: root
+
+      - name: Ensure group entries are sorted by gid
+        job: '/usr/sbin/grpck -s'
+        special_time: daily
+        user: root
+
+      - name: Ensure user entries are sorted by uid
+        job: '/usr/sbin/pwck -s'
+        special_time: daily
+        user: root
+...

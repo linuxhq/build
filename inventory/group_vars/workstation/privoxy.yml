@@ -1,0 +1,16 @@
+---
+privoxy_admin_address: admin@localhost
+privoxy_confdir: /opt/homebrew/etc/privoxy
+privoxy_listen_address: '[::1]:8118'
+privoxy_debug:
+  - 2
+privoxy_forward_socks5t:
+  - target_pattern: /
+    socks_proxy: 127.0.0.1:9050
+    http_parent: '.'
+privoxy_permit_access:
+  - src_addr: 127.0.0.1
+  - src_addr: localhost
+privoxy_deny_access:
+  - src_addr: 192.168.0.0/24
+...

@@ -1,0 +1,16 @@
+---
+liquidprompt_enable_batt: false
+liquidprompt_enable_bzr: false
+liquidprompt_enable_fossil: false
+liquidprompt_enable_hg: false
+liquidprompt_enable_jobs: false
+liquidprompt_enable_load: false
+liquidprompt_enable_perm: false
+liquidprompt_enable_runtime: true
+liquidprompt_enable_scls: false
+liquidprompt_enable_svn: false
+liquidprompt_enable_temp: false
+liquidprompt_enable_time: true
+liquidprompt_enable_title: false
+liquidprompt_percents_always: false
+...

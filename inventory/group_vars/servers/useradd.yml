@@ -1,0 +1,21 @@
+---
+useradd:
+  - name: root
+    password: '*'
+    shell: /sbin/nologin
+    uid: 0
+
+  - name: tkimball
+    append: true
+    group: tkimball
+    groups:
+      - wheel
+    password: "{{ tkimball_password }}"
+    uid: 2000
+
+  - name: linuxhq
+    group: linuxhq
+    password: '*'
+    shell: /usr/sbin/rush
+    uid: 3000
+...

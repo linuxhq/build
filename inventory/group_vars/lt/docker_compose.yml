@@ -1,0 +1,144 @@
+---
+docker_compose:
+  - name: linuxhq
+    version: '2.1'
+    env:
+      LINUXHQ_DOMAINNAME: "{{ inventory_hostname.split('.')[1:] | join('.') }}"
+      LINUXHQ_EXTERNAL_IP: "{{ ansible_default_ipv4.address }}"
+      LINUXHQ_GID: 3000
+      LINUXHQ_NETWORK: 192.168.0.0/24
+      LINUXHQ_OPENSSH_PASSWORD_ACCESS: 'false'
+      LINUXHQ_OPENSSH_PORTS: 127.0.0.1:26143:2222
+      LINUXHQ_OPENSSH_PUBLIC_KEY_DIR: /config/pubkeys
+      LINUXHQ_OPENSSH_SUDO_ACCESS: 'false'
+      LINUXHQ_OPENSSH_USER_NAME: "{{ openssh_user_name }}"
+      LINUXHQ_OPENSSH_USER_PASSWORD: "{{ openssh_user_password }}"
+      LINUXHQ_PATH_CONTAINERS: /home/linuxhq/containers
+      LINUXHQ_SMTP_FROM: "{{ smtp_username ~ '@' ~ smtp_server.split('.')[1:] | join('.') }}"
+      LINUXHQ_SMTP_PASSWORD: "{{ smtp_password }}"
+      LINUXHQ_SMTP_PORT: 587
+      LINUXHQ_SMTP_PORTS: 127.0.0.1:25:2500
+      LINUXHQ_SMTP_SERVER: "{{ smtp_server }}"
+      LINUXHQ_SMTP_USERNAME: "{{ smtp_username }}"
+      LINUXHQ_TZ: America/Los_Angeles
+      LINUXHQ_UID: 3000
+      LINUXHQ_UMASK: 2
+      LINUXHQ_WATCHTOWER_CLEANUP: 'true'
+      LINUXHQ_WATCHTOWER_SCHEDULE: '0 0 2 * * *'
+    networks:
+      bridge:
+        driver: bridge
+        driver_opts:
+          com.docker.network.host_ipv4: ${LINUXHQ_EXTERNAL_IP}
+        enable_ipv6: false
+        ipam:
+          config:
+            - subnet: ${LINUXHQ_NETWORK}
+    services:
+      limnoria:
+        container_name: limnoria
+        domainname: ${LINUXHQ_DOMAINNAME}
+        environment:
+          PGID: ${LINUXHQ_GID}
+          PUID: ${LINUXHQ_UID}
+          TZ: ${LINUXHQ_TZ}
+          UMASK: ${LINUXHQ_UMASK}
+        healthcheck:
+          interval: 10s
+          test: pgrep supybot > /dev/null
+          timeout: 5s
+        image: ghcr.io/linuxserver/limnoria:latest
+        networks:
+          - bridge
+        restart: unless-stopped
+        volumes:
+          - ${LINUXHQ_PATH_CONTAINERS}/limnoria/config:/config
+      msmtpd:
+        container_name: msmtpd
+        domainname: ${LINUXHQ_DOMAINNAME}
+        environment:
+          PGID: ${LINUXHQ_GID}
+          PUID: ${LINUXHQ_UID}
+          TZ: ${LINUXHQ_TZ}
+          UMASK: ${LINUXHQ_UMASK}
+          SMTP_AUTH: 'on'
+          SMTP_FROM: ${LINUXHQ_SMTP_FROM}
+          SMTP_HOST: ${LINUXHQ_SMTP_SERVER}
+          SMTP_PASSWORD: ${LINUXHQ_SMTP_PASSWORD}
+          SMTP_PORT: ${LINUXHQ_SMTP_PORT}
+          SMTP_STARTTLS: 'on'
+          SMTP_TLS: 'on'
+          SMTP_USER: ${LINUXHQ_SMTP_USERNAME}
+        healthcheck:
+          interval: 10s
+          test: nc -z localhost 2500
+          timeout: 5s
+        hostname: msmtpd
+        image: crazymax/msmtpd:latest
+        networks:
+          - bridge
+        ports:
+          - ${LINUXHQ_SMTP_PORTS}
+        restart: unless-stopped
+      openssh-server:
+        container_name: openssh-server
+        domainname: ${LINUXHQ_DOMAINNAME}
+        environment:
+          PASSWORD_ACCESS: ${LINUXHQ_OPENSSH_PASSWORD_ACCESS}
+          PGID: ${LINUXHQ_GID}
+          PUBLIC_KEY_DIR: ${LINUXHQ_OPENSSH_PUBLIC_KEY_DIR}
+          PUID: ${LINUXHQ_UID}
+          SUDO_ACCESS: ${LINUXHQ_OPENSSH_SUDO_ACCESS}
+          TZ: ${LINUXHQ_TZ}
+          UMASK: ${LINUXHQ_UMASK}
+          USER_NAME: ${LINUXHQ_OPENSSH_USER_NAME}
+          USER_PASSWORD: ${LINUXHQ_OPENSSH_USER_PASSWORD}
+        healthcheck:
+          interval: 10s
+          retries: 30
+          test: nc -z localhost 2222
+          timeout: 5s
+        hostname: openssh-server
+        image: lscr.io/linuxserver/openssh-server:latest
+        networks:
+          - bridge
+        ports:
+          - ${LINUXHQ_OPENSSH_PORTS}
+        restart: unless-stopped
+        volumes:
+          - ${LINUXHQ_PATH_CONTAINERS}/openssh-server/config/custom-cont-init.d:/custom-cont-init.d:ro
+          - ${LINUXHQ_PATH_CONTAINERS}/openssh-server/config/pubkeys:/config/pubkeys
+      watchtower:
+        container_name: watchtower
+        domainname: ${LINUXHQ_DOMAINNAME}
+        environment:
+          TZ: ${LINUXHQ_TZ}
+          UMASK: ${LINUXHQ_UMASK}
+          WATCHTOWER_CLEANUP: ${LINUXHQ_WATCHTOWER_CLEANUP}
+          WATCHTOWER_SCHEDULE: ${LINUXHQ_WATCHTOWER_SCHEDULE}
+        hostname: watchtower
+        image: containrrr/watchtower:latest
+        networks:
+          - bridge
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+      znc:
+        container_name: znc
+        domainname: ${LINUXHQ_DOMAINNAME}
+        environment:
+          PGID: ${LINUXHQ_GID}
+          PUID: ${LINUXHQ_UID}
+          TZ: ${LINUXHQ_TZ}
+          UMASK: ${LINUXHQ_UMASK}
+        healthcheck:
+          interval: 10s
+          test: nc -z localhost 6501
+          timeout: 5s
+        hostname: znc
+        image: linuxserver/znc:latest
+        networks:
+          - bridge
+        restart: unless-stopped
+        volumes:
+          - ${LINUXHQ_PATH_CONTAINERS}/znc:/config
+...

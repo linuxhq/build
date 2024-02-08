@@ -1,0 +1,24 @@
+---
+iam_groups:
+  - name: admin
+    managed_policies:
+      - AdministratorAccess
+    purge_policies: true
+    users:
+      - linuxhq
+
+  - name: backups
+    managed_policies:
+      - LinuxHQS3KopiaReadWrite
+    purge_policies: true
+    users:
+      - kopia
+
+  - name: development
+    managed_policies:
+      - AmazonEC2FullAccess
+      - AmazonVPCReadOnlyAccess
+    purge_policies: true
+    users:
+      - molecule
+...

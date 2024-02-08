@@ -1,0 +1,45 @@
+---
+sizeup_defaults:
+  - key: CenterNonResizableWindows
+    type: bool
+    value: true
+  - key: KeepWindowsInBounds
+    type: bool
+    value: true
+  - key: MenuEnabled
+    type: bool
+    value: true
+  - key: MultiMonitorResizeWindowProportionally
+    type: bool
+    value: true
+  - key: ShortcutsDisabled
+    type: bool
+    value: false
+  - key: ShowOverlay
+    type: bool
+    value: true
+  - key: ShowPrefsOnLaunch
+    type: bool
+    value: false
+  - key: ShowPrefsOnNextStart
+    type: bool
+    value: false
+  - key: ShowTooltips
+    type: bool
+    value: false
+  - key: StartAtLogin
+    type: bool
+    value: true
+  - key: SUAutomaticallyUpdate
+    type: bool
+    value: true
+  - key: SUEnableAutomaticChecks
+    type: bool
+    value: true
+  - key: TakeDrawersIntoAccount
+    type: bool
+    value: true
+  - key: suppressMenuBarDisabledPopup
+    type: bool
+    value: true
+...

@@ -1,0 +1,5 @@
+---
+cf_access_service_tokens:
+  - name: "{{ cf_zone }}"
+    duration: forever
+...

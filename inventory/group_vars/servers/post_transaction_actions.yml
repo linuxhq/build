@@ -1,0 +1,14 @@
+---
+pta_actions:
+  - package_filter: kernel
+    transaction_state: in
+    command: /usr/sbin/grub2-set-default 0
+
+  - package_filter: kernel-lt
+    transaction_state: in
+    command: /usr/sbin/grub2-set-default 0
+
+  - package_filter: kernel-ml
+    transaction_state: in
+    command: /usr/sbin/grub2-set-default 0
+...

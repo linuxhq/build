@@ -1,0 +1,33 @@
+---
+hermes_defaults:
+  - key: SUAutomaticallyUpdate
+    type: bool
+    value: true
+  - key: SUHasLaunchedBefore
+    type: bool
+    value: true
+  - key: audioQuality
+    type: int
+    value: 0
+  - key: pauseOnScreenLock
+    type: bool
+    value: true
+  - key: pauseOnScreensaverStart
+    type: bool
+    value: true
+  - key: playOnScreenUnlock
+    type: bool
+    value: true
+  - key: playOnScreensaverStop
+    type: bool
+    value: true
+  - key: pleaseGrowlPlay
+    type: bool
+    value: true
+  - key: statusBarIcon
+    type: bool
+    value: true
+  - key: statusBarIconBlackWhite
+    type: bool
+    value: true
+...

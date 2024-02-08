@@ -1,0 +1,12 @@
+---
+openssh_client:
+  AddressFamily: inet
+  Ciphers: aes128-ctr,aes192-ctr,aes256-ctr
+  ForwardAgent: false
+  ForwardX11: false
+  HashKnownHosts: true
+  LogLevel: ERROR
+  MACs: hmac-sha2-256,hmac-sha2-512
+  StrictHostKeyChecking: false
+  UserKnownHostsFile: /dev/null
+...

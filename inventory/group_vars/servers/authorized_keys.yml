@@ -1,0 +1,14 @@
+---
+authorized_keys:
+  - user: root
+    exclusive: true
+    key: "{{ openssh_key_pub }}"
+
+  - user: tkimball
+    exclusive: true
+    key: "{{ openssh_key_pub }}"
+
+  - user: linuxhq
+    exclusive: true
+    key: "{{ openssh_key_pub }}"
+...

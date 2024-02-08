@@ -1,0 +1,6 @@
+---
+cf_zone: "{{ inventory_hostname }}"
+cf_zone_id: "{{ _cf_zone_id[cf_zone] }}"
+cf_zones:
+  - name: "{{ cf_zone }}"
+...

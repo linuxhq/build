@@ -1,0 +1,9 @@
+---
+pam_limits_d:
+  - file: 99-linuxhq
+    limits:
+      - domain: '*'
+        limit_item: core
+        limit_type: hard
+        value: 0
+...

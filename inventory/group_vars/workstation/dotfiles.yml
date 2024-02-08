@@ -1,0 +1,18 @@
+---
+dotfiles_repo: "git@github.com:tkimball83/dotfiles.git"
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: "{{ ansible_env.HOME }}/Git/dotfiles"
+dotfiles_files:
+  - .bash_aliases
+  - .bash_exports
+  - .bash_functions
+  - .bash_profile
+  - .bash_scripts
+  - .bash_sessions_disable
+  - .gitconfig
+  - .gitignore
+  - .inputrc
+  - .macos
+  - .vimrc
+  - .zshrc
+...

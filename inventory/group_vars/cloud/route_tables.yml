@@ -1,0 +1,10 @@
+---
+route_tables:
+  - name: molecule-a
+    routes:
+      - dest: '0.0.0.0/0'
+        gateway_id: igw
+    subnets:
+      - "{{ _subnet_id['molecule-a'] }}"
+    vpc_id: "{{ _vpc_id['molecule'] }}"
+...

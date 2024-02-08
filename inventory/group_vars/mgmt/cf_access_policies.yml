@@ -1,0 +1,30 @@
+---
+cf_access_policies:
+  - application_id: "{{ _cf_access_app_id[cf_tunnel_fs1] }}"
+    decision: non_identity
+    name: "{{ cf_tunnel_fs1 }}"
+    include:
+      - group:
+          id: "{{ _cf_access_group_id[cf_zone] }}"
+
+  - application_id: "{{ _cf_access_app_id[cf_tunnel_fs2] }}"
+    decision: non_identity
+    name: "{{ cf_tunnel_fs2 }}"
+    include:
+      - group:
+          id: "{{ _cf_access_group_id[cf_zone] }}"
+
+  - application_id: "{{ _cf_access_app_id[cf_tunnel_oh1] }}"
+    decision: non_identity
+    name: "{{ cf_tunnel_oh1 }}"
+    include:
+      - group:
+          id: "{{ _cf_access_group_id[cf_zone] }}"
+
+  - application_id: "{{ _cf_access_app_id[cf_tunnel_pn1] }}"
+    decision: non_identity
+    name: "{{ cf_tunnel_pn1 }}"
+    include:
+      - group:
+          id: "{{ _cf_access_group_id[cf_zone] }}"
+...

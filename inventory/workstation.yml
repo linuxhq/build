@@ -1,0 +1,9 @@
+---
+all:
+  children:
+    workstation:
+      vars:
+        ansible_connection: local
+      hosts:
+        macos: {}
+...

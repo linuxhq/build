@@ -1,0 +1,22 @@
+---
+cloudflared_command: tunnel run -p http2
+
+cloudflared_tunnels:
+  - name: "{{ ansible_hostname }}.linuxhq.net"
+    account_tag: "{{ cf_account_tag }}"
+    id: "{{ linuxhq_net_tunnel_id }}"
+    ingress:
+      - hostname: "{{ ansible_hostname }}.linuxhq.net"
+        service: ssh://localhost:22
+      - service: http_status:404
+    secret: "{{ cf_tunnel_secret }}"
+
+  - name: "{{ ansible_hostname }}.linuxhq.org"
+    account_tag: "{{ cf_account_tag }}"
+    id: "{{ linuxhq_org_tunnel_id }}"
+    ingress:
+      - hostname: "{{ ansible_hostname }}.linuxhq.org"
+        service: ssh://localhost:22
+      - service: http_status:404
+    secret: "{{ cf_tunnel_secret }}"
+...

@@ -1,0 +1,18 @@
+---
+appzapper_defaults:
+  - key: AppleAppsSafe
+    type: bool
+    value: true
+  - key: DefaultsSet
+    type: bool
+    value: true
+  - key: "Registration Code"
+    type: string
+    value: "{{ appzapper_registration_code }}"
+  - key: "Registration Name"
+    type: string
+    value: 'Taylor Kimball'
+  - key: ZapEffects
+    type: bool
+    value: true
+...

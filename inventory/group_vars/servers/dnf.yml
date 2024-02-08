@@ -1,0 +1,35 @@
+---
+dnf_absent:
+  - cockpit-ws
+  - postfix
+
+dnf_present:
+  - bind-utils
+  - git
+  - iptraf-ng
+  - net-tools
+  - python3-dnf-plugins-core
+  - rsync
+  - rsyslog
+  - screen
+  - sysstat
+  - tcpdump
+  - tree
+  - "{{ 'python3' if
+        ansible_distribution_major_version | int >= 9 else
+        'python39' }}"
+  - "{{ 'python3-setuptools' if
+        ansible_distribution_major_version | int >= 9 else
+        'python39-setuptools' }}"
+  - "{{ 'rsyslog-logrotate' if
+        ansible_distribution_major_version | int >= 9 else
+        omit }}"
+
+dnf_protected_d:
+  - name: shim
+    packages:
+      - shim-aa64
+      - shim-arm
+      - shim-ia32
+      - shim-x64
+...

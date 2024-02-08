@@ -1,0 +1,10 @@
+---
+logrotate_conf:
+  - compress
+  - create
+  - daily
+  - dateext
+  - rotate 1
+  - shred
+  - include /etc/logrotate.d
+...

@@ -1,0 +1,10 @@
+---
+docker_daemon:
+  experimental: false
+  ipv6: false
+  ip6tables: false
+  live-restore: true
+
+docker_users:
+  - tkimball
+...

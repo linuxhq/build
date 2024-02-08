@@ -1,0 +1,7 @@
+---
+cf_security:
+  - zone_id: "{{ _cf_zone_id[cf_zone] }}"
+    browser_check: true
+    challenge_ttl: 1800
+    security_level: high
+...

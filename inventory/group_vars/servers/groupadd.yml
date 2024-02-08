@@ -1,0 +1,8 @@
+---
+groupadd:
+  - name: tkimball
+    gid: 2000
+
+  - name: linuxhq
+    gid: 3000
+...
