@@ -1,0 +1,4 @@
+---
+cf_account_id: "{{ _cf_account_id }}"
+cf_account_name: linuxhq
+...
