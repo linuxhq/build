@@ -11,6 +11,7 @@
     - linuxhq.linux.systemd_hostnamectl
     - linuxhq.linux.systemd_timedatectl
     - linuxhq.linux.setup
+    - linuxhq.linux.rush
     - linuxhq.linux.sudo
     - linuxhq.linux.group
     - linuxhq.linux.user

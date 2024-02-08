@@ -10,17 +10,16 @@
     - linuxhq.linux.dnf_automatic
     - linuxhq.linux.needs_restarting
     - linuxhq.linux.post_transaction_actions
-    - linuxhq.linux.rush
+    - linuxhq.linux.cronie
     - linuxhq.linux.logrotate
     - linuxhq.linux.pam_limit
     - linuxhq.linux.pam_pwquality
     - linuxhq.linux.virtualenv
     - linuxhq.linux.directory
-    - linuxhq.linux.kopia
-    - linuxhq.linux.cronie
     - linuxhq.linux.docker
     - linuxhq.linux.docker_compose
     - linuxhq.linux.monit
+    - linuxhq.linux.kopia
     - linuxhq.linux.openssh_client
     - linuxhq.linux.openssh_server
 ...
