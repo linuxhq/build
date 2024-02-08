@@ -2,10 +2,12 @@
 irssi_chatnets:
   efnet:
     type: IRC
+
 irssi_ignores:
   - exception: false
     level: 'CTCPS DCC'
     mask: '*'
+
 irssi_scripts:
   - name: autowhois.pl
     base64: |
@@ -49,16 +51,19 @@ irssi_scripts:
       ICRuaWNrIik7Cn0KCklyc3NpOjpzaWduYWxfYWRkX2ZpcnN0KCdtZXNzYWdlIHByaXZhdGUnLCAn
       bXNnX3ByaXZhdGVfZmlyc3QnKTsKSXJzc2k6OnNpZ25hbF9hZGQoJ21lc3NhZ2UgcHJpdmF0ZScs
       ICdtc2dfcHJpdmF0ZScpOwo=
+
 irssi_servers:
   - address: irc.efnet.net
     autoconnect: 'yes'
     chatnet: efnet
     ssl_verify: 'yes'
     use_ssl: 'yes'
+
 irssi_settings:
   core:
     nick: "{{ lookup('password', '/dev/null length=9 chars=lowercase') }}"
     real_name: "{{ lookup('password', '/dev/null length=36 chars=ascii_letters,digits') }}"
     user_name: "{{ lookup('password', '/dev/null length=9 chars=ascii_letters') | lower }}"
+
 irssi_theme: http://irssi-import.github.io/themes/initrd.theme
 ...
