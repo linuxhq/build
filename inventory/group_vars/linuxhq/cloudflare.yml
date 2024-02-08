@@ -1,10 +1,6 @@
 ---
 cf_account_id: "{{ _cf_account_id }}"
 cf_account_name: linuxhq
-cf_tunnel_fs1: "{{ 'fs1.' ~ inventory_hostname }}"
-cf_tunnel_fs2: "{{ 'fs2.' ~ inventory_hostname }}"
-cf_tunnel_oh1: "{{ 'oh1.' ~ inventory_hostname }}"
-cf_tunnel_pn1: "{{ 'pn1.' ~ inventory_hostname }}"
 
 cf_account_tag: !vault |
   $ANSIBLE_VAULT;1.1;AES256
