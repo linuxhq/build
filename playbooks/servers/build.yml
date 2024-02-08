@@ -18,8 +18,8 @@
     - linuxhq.linux.directory
     - linuxhq.linux.docker
     - linuxhq.linux.docker_compose
-    - linuxhq.linux.monit
     - linuxhq.linux.kopia
+    - linuxhq.linux.monit
     - linuxhq.linux.openssh_client
     - linuxhq.linux.openssh_server
 ...
