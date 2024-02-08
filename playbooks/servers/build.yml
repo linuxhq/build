@@ -1,5 +1,6 @@
 ---
-- hosts: servers
+- name: Ensure server build playbook is executed
+  hosts: servers
   roles:
     - linuxhq.linux.epel
     - linuxhq.linux.elrepo

@@ -1,5 +1,6 @@
 ---
-- hosts: cdn
+- name: Ensure cdn playbook is executed
+  hosts: cdn
   roles:
     - linuxhq.cloudflare.zone
     - linuxhq.cloudflare.ssl

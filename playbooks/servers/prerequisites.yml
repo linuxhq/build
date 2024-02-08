@@ -1,5 +1,6 @@
 ---
-- hosts: servers
+- name: Ensure server prerequisite playbook is executed
+  hosts: servers
   roles:
     - linuxhq.linux.selinux
     - linuxhq.linux.unbound

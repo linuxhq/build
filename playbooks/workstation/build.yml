@@ -1,7 +1,6 @@
 ---
-- hosts: workstation
-  collections:
-    - linuxhq.macos
+- name: Ensure workstation playbook is executed
+  hosts: workstation
   roles:
     - geerlingguy.dotfiles
     - geerlingguy.mac.homebrew

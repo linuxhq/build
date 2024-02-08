@@ -1,7 +1,6 @@
 ---
-- hosts: cloud
-  collections:
-    - linuxhq.aws
+- name: Ensure cloud playbook is executed
+  hosts: cloud
   roles:
     - linuxhq.aws.iam_user
     - linuxhq.aws.iam_group
