@@ -5,8 +5,4 @@ directories:
     owner: linuxhq
     paths:
       - path: /home/linuxhq/containers
-      - path: /home/linuxhq/containers/openssh-server
-      - path: /home/linuxhq/containers/openssh-server/config
-      - path: /home/linuxhq/containers/openssh-server/config/custom-cont-init.d
-      - path: /home/linuxhq/containers/openssh-server/config/pubkeys
 ...
