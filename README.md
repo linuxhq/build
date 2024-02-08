@@ -4,10 +4,6 @@
 
 Manage nodes via ansible
 
-## Requirements
-
- * Ansible >= 8.0
-
 ## Environment
 
     make
