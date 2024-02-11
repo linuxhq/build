@@ -8,28 +8,26 @@ Manage nodes via ansible
 
     make
     source venv/bin/activate
+    op item get linuxhq-vault \
+      --fields password > ${ANSIBLE_VAULT_PASSWORD_FILE}
 
 ## Execution
 
 ### CDN
 
-    export ANSIBLE_INVENTORY=inventory/linuxhq.yml
     ansible-playbook playbooks/cdn/build.yml
 
 ### Cloud
 
-    export ANSIBLE_INVENTORY=inventory/cloud.yml
     ansible-playbook playbooks/cloud/build.yml
 
 ### Servers
 
-    export ANSIBLE_INVENTORY=inventory/linuxhq.yml
     ansible-playbook playbooks/servers/prerequisites.yml
     ansible-playbook playbooks/servers/build.yml
 
 ### Workstation
 
-    export ANSIBLE_INVENTORY=inventory/workstation.yml
     ansible-playbook playbooks/workstation/build.yml
 
 ## License
