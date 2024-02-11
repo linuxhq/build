@@ -1,7 +1,4 @@
 ---
-cronie_allow:
-  - tkimball
-
 cronie_jobs:
   - cron_file: linuxhq
     jobs:
