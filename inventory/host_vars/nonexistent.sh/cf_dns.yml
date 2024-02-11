@@ -7,6 +7,11 @@ cf_dns:
         type: A
         value: 5.39.88.56
 
+      - record: '@'
+        proxied: false
+        type: A
+        value: 208.87.241.207
+
       - record: _dmarc
         proxied: false
         type: TXT
