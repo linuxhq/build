@@ -61,20 +61,28 @@ monit_process:
     rules:
       - matching containerd
       - if does not exist then exec /opt/monit/bin/discord.sh
+
   - name: docker
     rules:
       - matching docker
       - if does not exist then exec /opt/monit/bin/discord.sh
+
   - name: kopia
     rules:
       - matching kopia
       - if does not exist then exec /opt/monit/bin/discord.sh
+
   - name: sshd
     rules:
       - matching sshd
       - if does not exist then exec /opt/monit/bin/discord.sh
 
 monit_program:
+  - name: cloudflared
+    rules:
+      - path /usr/bin/systemctl --quiet is-active 'cloudflared@*.service'
+      - if status ne 0 for 5 cycles then exec /opt/monit/bin/discord.sh
+
   - name: docker-compose
     rules:
       - path /usr/bin/systemctl --quiet is-active 'docker-compose@*.service'
