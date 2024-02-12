@@ -12,6 +12,9 @@ iterm2_defaults:
   - key: AppleWindowTabbingMode
     type: string
     value: manual
+  - key: CommandSelection
+    type: bool
+    value: false
   - key: NoSyncHaveWarnedAboutPasteConfirmationChange
     type: bool
     value: true
