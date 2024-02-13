@@ -14,7 +14,6 @@
     - linuxhq.linux.logrotate
     - linuxhq.linux.pam_limit
     - linuxhq.linux.pam_pwquality
-    - linuxhq.linux.virtualenv
     - linuxhq.linux.directory
     - linuxhq.linux.docker
     - linuxhq.linux.docker_compose
