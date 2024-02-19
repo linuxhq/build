@@ -5,5 +5,5 @@ sudoers_d:
     host: ALL
     runas: ALL
     cmnds:
-      - NOPASSWD:ALL
+      - ALL
 ...
