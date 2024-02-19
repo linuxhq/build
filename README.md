@@ -23,7 +23,7 @@ Manage nodes via ansible
 
 ### Servers
 
-    ansible-playbook playbooks/servers/prerequisites.yml
+    ansible-playbook playbooks/servers/prerequisites.yml -e ansible_user=xxx
     ansible-playbook playbooks/servers/build.yml
 
 ### Workstation
