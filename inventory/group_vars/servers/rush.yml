@@ -8,8 +8,14 @@ rush_rules:
   - name: default
     rules:
       - clrenv
-      - keepenv USER LOGNAME HOME PATH
+      - keepenv HOME LOGNAME PATH SSH_AUTH_SOCK USER
       - fall-through
+
+  - name: python
+    rules:
+      - match $command ~ "/usr/bin/python[0-9]?"
+      - match $gid ~ "300[1-9]"
+
   - name: rsync
     rules:
       - chdir "~"

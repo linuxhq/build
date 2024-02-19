@@ -5,6 +5,8 @@ openssh_client:
   ForwardAgent: false
   ForwardX11: false
   HashKnownHosts: true
+  IdentitiesOnly: true
+  IdentityFile: ~/.ssh/authorized_keys
   LogLevel: ERROR
   MACs: hmac-sha2-256,hmac-sha2-512
   StrictHostKeyChecking: false

@@ -1,4 +1,9 @@
 ---
-sudoers_env_keep:
-  - SSH_AUTH_SOCK
+sudoers_d:
+  - file: 3001
+    user: '%#3001'
+    host: ALL
+    runas: ALL
+    cmnds:
+      - NOPASSWD:ALL
 ...
