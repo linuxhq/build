@@ -11,9 +11,9 @@ rush_rules:
       - keepenv HOME LOGNAME PATH SSH_AUTH_SOCK USER
       - fall-through
 
-  - name: python
+  - name: ansible
     rules:
-      - match $command ~ "/usr/bin/python[0-9]?"
+      - match $command ~ "/bin/sh -c .*"
       - match $gid ~ "300[1-9]"
 
   - name: rsync
