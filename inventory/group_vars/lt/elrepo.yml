@@ -4,4 +4,5 @@ elrepo_kernel_absent: true
 elrepo_kernel_default: true
 elrepo_kernel_reboot: true
 elrepo_kernel_version: lt
+elrepo_repository_elrepo_kernel: true
 ...
