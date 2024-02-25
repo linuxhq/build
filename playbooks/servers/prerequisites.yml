@@ -3,18 +3,9 @@
   hosts: servers
   roles:
     - linuxhq.linux.selinux
-    - linuxhq.linux.unbound
-    - linuxhq.linux.nmcli
-    - linuxhq.linux.sysctl
-    - linuxhq.linux.chrony
-    - linuxhq.linux.tcp_bbr
-    - linuxhq.linux.systemd_hostnamectl
-    - linuxhq.linux.systemd_timedatectl
-    - linuxhq.linux.setup
     - linuxhq.linux.rush
-    - linuxhq.linux.sudo
     - linuxhq.linux.group
     - linuxhq.linux.user
     - linuxhq.linux.authorized_key
-    - linuxhq.linux.cloudflared
+    - linuxhq.linux.sudo
 ...

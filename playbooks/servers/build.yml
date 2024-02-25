@@ -2,6 +2,13 @@
 - name: Ensure server build playbook is executed
   hosts: servers
   roles:
+    - linuxhq.linux.unbound
+    - linuxhq.linux.nmcli
+    - linuxhq.linux.sysctl
+    - linuxhq.linux.tcp_bbr
+    - linuxhq.linux.systemd_hostnamectl
+    - linuxhq.linux.systemd_timedatectl
+    - linuxhq.linux.setup
     - linuxhq.linux.epel
     - linuxhq.linux.elrepo
     - linuxhq.linux.rpmfusion
@@ -10,10 +17,12 @@
     - linuxhq.linux.dnf_automatic
     - linuxhq.linux.needs_restarting
     - linuxhq.linux.post_transaction_actions
+    - linuxhq.linux.chrony
     - linuxhq.linux.cronie
     - linuxhq.linux.logrotate
     - linuxhq.linux.pam_limit
     - linuxhq.linux.pam_pwquality
+    - linuxhq.linux.cloudflared
     - linuxhq.linux.directory
     - linuxhq.linux.docker
     - linuxhq.linux.docker_compose
