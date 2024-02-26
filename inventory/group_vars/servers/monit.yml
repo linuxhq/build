@@ -56,6 +56,11 @@ monit_filesystem:
       - path /
       - if space usage gt 80% for 5 cycles then exec /opt/monit/bin/discord.sh
 
+  - name: srv
+    rules:
+      - path /srv
+      - if space usage gt 80% for 5 cycles then exec /opt/monit/bin/discord.sh
+
 monit_process:
   - name: containerd
     rules:
