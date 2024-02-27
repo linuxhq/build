@@ -1,0 +1,12 @@
+---
+monit_filesystem:
+  - name: root
+    rules:
+      - path /
+      - if space usage gt 80% for 5 cycles then exec /opt/monit/bin/discord.sh
+
+  - name: srv
+    rules:
+      - path /srv
+      - if space usage gt 80% for 5 cycles then exec /opt/monit/bin/discord.sh
+...

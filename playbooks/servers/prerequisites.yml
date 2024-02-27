@@ -8,4 +8,7 @@
     - linuxhq.linux.user
     - linuxhq.linux.authorized_key
     - linuxhq.linux.sudo
+    - linuxhq.linux.parted
+    - linuxhq.linux.filesystem
+    - linuxhq.linux.mount
 ...

@@ -1,0 +1,7 @@
+---
+mounts:
+  - fstype: ext4
+    opts: nodev,noexec,nosuid
+    path: /srv
+    src: UUID=9f042ee9-3820-457d-9672-fe1a3ff96d71
+...
