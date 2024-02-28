@@ -3,7 +3,7 @@ kopia_maintenance:
   - --enable-quick true
 
 kopia_policies:
-  - target: /home/linuxhq/containers
+  - target: /home
     flags:
       - --compression gzip
       - --keep-annual 0
