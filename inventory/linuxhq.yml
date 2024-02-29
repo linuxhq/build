@@ -23,7 +23,6 @@ all:
             el:
               hosts:
                 fs1.linuxhq.net:
-                fs2.linuxhq.net:
             lt:
               hosts:
                 oh1.linuxhq.net:

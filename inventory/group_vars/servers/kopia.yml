@@ -5,6 +5,8 @@ kopia_maintenance:
 kopia_policies:
   - target: /home
     flags:
+      - --add-ignore 220830131
+      - --add-ignore 385356819
       - --compression gzip
       - --keep-annual 0
       - --keep-hourly 24
