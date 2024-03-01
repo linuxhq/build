@@ -1,7 +1,0 @@
----
-mounts:
-  - fstype: ext4
-    opts: nodev,noexec,nosuid
-    path: /srv
-    src: "UUID={{ _device_part_uuid['sdb1'] }}"
-...

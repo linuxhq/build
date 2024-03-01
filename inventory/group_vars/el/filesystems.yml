@@ -1,5 +1,0 @@
----
-filesystems:
-  - dev: /dev/sdb1
-    fstype: ext4
-...
