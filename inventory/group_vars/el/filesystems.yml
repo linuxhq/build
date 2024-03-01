@@ -1,5 +1,5 @@
 ---
 filesystems:
-  - dev: /dev/sda1
+  - dev: /dev/sdb1
     fstype: ext4
 ...

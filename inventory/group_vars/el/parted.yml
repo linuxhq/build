@@ -1,6 +1,6 @@
 ---
 parted:
-  - device: /dev/sda
+  - device: /dev/sdb
     label: gpt
     partitions:
       - number: 1
