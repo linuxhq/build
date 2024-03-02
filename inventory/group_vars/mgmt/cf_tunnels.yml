@@ -1,14 +1,9 @@
 ---
 cf_tunnel_fs1: "{{ 'fs1.' ~ inventory_hostname }}"
-cf_tunnel_oh1: "{{ 'oh1.' ~ inventory_hostname }}"
 cf_tunnel_pn1: "{{ 'pn1.' ~ inventory_hostname }}"
 
 cf_tunnels:
   - name: "{{ cf_tunnel_fs1 }}"
-    config_src: local
-    tunnel_secret: "{{ cf_tunnel_secret }}"
-
-  - name: "{{ cf_tunnel_oh1 }}"
     config_src: local
     tunnel_secret: "{{ cf_tunnel_secret }}"
 

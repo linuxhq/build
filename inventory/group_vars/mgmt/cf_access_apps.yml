@@ -4,10 +4,6 @@ cf_access_apps:
     name: "{{ cf_tunnel_fs1 }}"
     type: self_hosted
 
-  - domain: "oh1.{{ cf_zone }}"
-    name: "{{ cf_tunnel_oh1 }}"
-    type: self_hosted
-
   - domain: "pn1.{{ cf_zone }}"
     name: "{{ cf_tunnel_pn1 }}"
     type: self_hosted

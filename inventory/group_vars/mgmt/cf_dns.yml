@@ -17,11 +17,6 @@ cf_dns:
         type: CNAME
         value: "{{ _cf_tunnel_id[cf_tunnel_fs1] ~ '.cfargotunnel.com' }}"
 
-      - record: oh1
-        proxied: true
-        type: CNAME
-        value: "{{ _cf_tunnel_id[cf_tunnel_oh1] ~ '.cfargotunnel.com' }}"
-
       - record: pn1
         proxied: true
         type: CNAME

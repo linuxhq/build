@@ -25,6 +25,5 @@ all:
                 fs1.linuxhq.net:
             lt:
               hosts:
-                oh1.linuxhq.net:
                 pn1.linuxhq.net:
 ...
