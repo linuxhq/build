@@ -1,0 +1,4 @@
+---
+pam_ssh_agent_auth_keys:
+  - "{{ openssh_key_pub }}"
+...

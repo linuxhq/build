@@ -1,9 +1,0 @@
----
-sudoers_d:
-  - file: 3001
-    user: '%#3001'
-    host: ALL
-    runas: ALL
-    cmnds:
-      - ALL
-...
