@@ -9,4 +9,5 @@
     - linuxhq.linux.authorized_key
     - linuxhq.linux.pam_ssh_agent_auth
     - linuxhq.linux.sudo
+    - linuxhq.linux.file
 ...

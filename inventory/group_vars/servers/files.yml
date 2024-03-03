@@ -1,0 +1,5 @@
+---
+files:
+  - path: /usr/bin/su
+    mode: '0755'
+...
