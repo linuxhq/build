@@ -1,8 +1,8 @@
 ---
 useradd:
   - name: root
-    password: '*'
-    shell: /sbin/nologin
+    password: "{{ password_root }}"
+    shell: /bin/bash
     uid: 0
 
   - name: tkimball
@@ -10,7 +10,8 @@ useradd:
     group: tkimball
     groups:
       - wheel
-    password: "{{ tkimball_password }}"
+    password: "{{ password_tkimball }}"
+    shell: /bin/bash
     uid: 2000
 
   - name: linuxhq

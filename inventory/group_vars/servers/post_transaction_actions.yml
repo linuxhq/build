@@ -11,4 +11,8 @@ pta_actions:
   - package_filter: kernel-ml
     transaction_state: in
     command: /usr/sbin/grub2-set-default 0
+
+  - package_filter: util-linux
+    transaction_state: in
+    command: /usr/bin/chmod -s /usr/bin/su
 ...
