@@ -7,4 +7,9 @@ nmcli:
     gw4: "{{ ansible_default_ipv4.gateway }}"
     method6: ignore
     type: ethernet
+
+  - conn_name: usb0
+    method4: disabled
+    method6: ignore
+    type: ethernet
 ...
