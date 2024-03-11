@@ -1,5 +1,9 @@
 ---
 pta_actions:
+  - package_filter: docker-ce
+    transaction_state: in
+    command: /usr/bin/systemctl restart "docker-compose@*.service"
+
   - package_filter: kernel
     transaction_state: in
     command: /usr/sbin/grub2-set-default 0
