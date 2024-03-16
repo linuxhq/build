@@ -12,7 +12,9 @@
     - linuxhq.macos.liquidprompt
     - linuxhq.macos.monitorcontrol
     - linuxhq.macos.privoxy
-    - linuxhq.macos.protonvpn
+    - linuxhq.macos.proton_mail
+    - linuxhq.macos.proton_drive
+    - linuxhq.macos.proton_vpn
     - linuxhq.macos.shell_proxy
     - linuxhq.macos.sizeup
     - linuxhq.macos.textual

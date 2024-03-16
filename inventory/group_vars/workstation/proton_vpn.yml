@@ -1,5 +1,5 @@
 ---
-protonvpn_defaults:
+proton_vpn_defaults:
   - key: AutoConnect
     type: bool
     value: true
