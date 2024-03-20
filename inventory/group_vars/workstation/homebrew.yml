@@ -6,6 +6,7 @@ homebrew_installed_packages:
   - inetutils
   - ipcalc
   - java
+  - jq
   - mas
   - nmap
   - pwgen
@@ -22,6 +23,7 @@ homebrew_taps:
 
 homebrew_cask_apps:
   - 1password
+  - 1password-cli
   - discord
   - docker
   - firefox

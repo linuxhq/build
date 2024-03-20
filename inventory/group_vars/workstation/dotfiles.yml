@@ -1,7 +1,8 @@
 ---
-dotfiles_repo: "git@github.com:tkimball83/dotfiles.git"
+dotfiles_repo: "https://github.com/tkimball83/dotfiles.git"
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: "{{ ansible_env.HOME }}/Git/dotfiles"
+dotfiles_repo_version: main
 dotfiles_files:
   - .bash_aliases
   - .bash_exports

@@ -8,8 +8,6 @@ Manage nodes via ansible
 
     make
     source venv/bin/activate
-    op item get linuxhq-vault \
-      --fields password > ${ANSIBLE_VAULT_PASSWORD_FILE}
 
 ## Execution
 
