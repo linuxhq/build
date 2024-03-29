@@ -14,11 +14,14 @@ docker_compose:
       LINUXHQ_OPENSSH_USER_NAME: "{{ openssh_user_name }}"
       LINUXHQ_OPENSSH_USER_PASSWORD: "{{ openssh_user_password }}"
       LINUXHQ_PATH_CONTAINERS: /home/linuxhq/containers
+      LINUXHQ_SMTP_AUTH: 'on'
       LINUXHQ_SMTP_FROM: "{{ smtp_username ~ '@' ~ smtp_server.split('.')[1:] | join('.') }}"
       LINUXHQ_SMTP_PASSWORD: "{{ smtp_password }}"
       LINUXHQ_SMTP_PORT: 587
       LINUXHQ_SMTP_PORTS: 127.0.0.1:25:2500
       LINUXHQ_SMTP_SERVER: "{{ smtp_server }}"
+      LINUXHQ_SMTP_STARTTLS: 'on'
+      LINUXHQ_SMTP_TLS: 'on'
       LINUXHQ_SMTP_USERNAME: "{{ smtp_username }}"
       LINUXHQ_TZ: America/Los_Angeles
       LINUXHQ_UID: 3000
@@ -61,13 +64,13 @@ docker_compose:
           PUID: ${LINUXHQ_UID}
           TZ: ${LINUXHQ_TZ}
           UMASK: ${LINUXHQ_UMASK}
-          SMTP_AUTH: 'on'
+          SMTP_AUTH: ${LINUXHQ_SMTP_AUTH}
           SMTP_FROM: ${LINUXHQ_SMTP_FROM}
           SMTP_HOST: ${LINUXHQ_SMTP_SERVER}
           SMTP_PASSWORD: ${LINUXHQ_SMTP_PASSWORD}
           SMTP_PORT: ${LINUXHQ_SMTP_PORT}
-          SMTP_STARTTLS: 'on'
-          SMTP_TLS: 'on'
+          SMTP_STARTTLS: ${LINUXHQ_SMTP_STARTTLS}
+          SMTP_TLS: ${LINUXHQ_SMTP_TLS}
           SMTP_USER: ${LINUXHQ_SMTP_USERNAME}
         healthcheck:
           interval: 10s
