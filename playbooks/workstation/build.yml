@@ -15,7 +15,7 @@
     - linuxhq.macos.proton_mail
     - linuxhq.macos.proton_drive
     - linuxhq.macos.proton_vpn
+    - linuxhq.macos.rectangle
     - linuxhq.macos.shell_proxy
-    - linuxhq.macos.sizeup
     - linuxhq.macos.textual
 ...

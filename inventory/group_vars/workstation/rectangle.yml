@@ -1,0 +1,9 @@
+---
+rectangle_defaults:
+  - key: SUEnableAutomaticChecks
+    type: bool
+    value: true
+  - key: launchOnLogin
+    type: bool
+    value: true
+...
