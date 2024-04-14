@@ -15,6 +15,7 @@
     - linuxhq.linux.speedtest
     - linuxhq.linux.dnf
     - linuxhq.linux.dnf_automatic
+    - linuxhq.linux.dnf_versionlock
     - linuxhq.linux.needs_restarting
     - linuxhq.linux.post_transaction_actions
     - linuxhq.linux.chrony
