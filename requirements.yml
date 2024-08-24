@@ -3,7 +3,7 @@ collections:
   - name: geerlingguy.mac
     version: '*'
   - name: linuxhq.aws
-    version: 1.0.5
+    version: 1.0.7
   - name: linuxhq.cloudflare
     version: '*'
   - name: linuxhq.linux
