@@ -15,4 +15,5 @@
     - linuxhq.aws.ec2_vpc_subnet
     - linuxhq.aws.ec2_vpc_nat_gateway
     - linuxhq.aws.ec2_vpc_route_table
+    - linuxhq.aws.ec2_security_group
 ...
