@@ -1,0 +1,23 @@
+---
+iam_managed_policy_list:
+  - name: LinuxHQS3KopiaReadWrite
+    policy:
+      Version: '2012-10-17'
+      Statement:
+        - Effect: Allow
+          Action:
+            - iam:GetUser
+          Resource:
+            - "arn:aws:iam::{{ _aws_caller_info_account }}:user/kopia"
+        - Effect: Allow
+          Action:
+            - s3:*
+          Resource:
+            - "arn:aws:s3:::{{ _aws_caller_info_account }}-{{ aws_region }}-kopia"
+            - "arn:aws:s3:::{{ _aws_caller_info_account }}-{{ aws_region }}-kopia/*"
+        - Effect: Allow
+          Action:
+            - s3:ListAllMyBuckets
+          Resource:
+            - '*'
+...

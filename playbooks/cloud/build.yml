@@ -2,10 +2,15 @@
 - name: Ensure cloud playbook is executed
   hosts: cloud
   roles:
+    - linuxhq.aws.aws_caller_info
+    - linuxhq.aws.aws_region_info
+    - linuxhq.aws.aws_az_info
+    - linuxhq.aws.iam_managed_policy
+    - linuxhq.aws.iam_role
     - linuxhq.aws.iam_user
     - linuxhq.aws.iam_group
-    - linuxhq.aws.vpc
-    - linuxhq.aws.internet_gateway
-    - linuxhq.aws.subnet
-    - linuxhq.aws.route_table
+    - linuxhq.aws.ec2_vpc_net
+    - linuxhq.aws.ec2_vpc_igw
+    - linuxhq.aws.ec2_vpc_subnet
+    - linuxhq.aws.ec2_vpc_route_table
 ...

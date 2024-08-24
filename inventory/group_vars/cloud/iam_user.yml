@@ -1,5 +1,5 @@
 ---
-iam_users:
+iam_user_list:
   - name: kopia
     purge_policies: true
 
