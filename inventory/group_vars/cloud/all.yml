@@ -1,5 +1,5 @@
 ---
 aws_network: 192.168.0.0/24
-aws_region: us-west-1
+aws_region: us-west-2
 aws_vpc: linuxhq
 ...
