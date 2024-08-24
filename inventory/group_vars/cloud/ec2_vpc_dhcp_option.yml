@@ -4,5 +4,4 @@ ec2_vpc_dhcp_option_list:
     dns_servers:
       - 1.1.1.1
       - 1.1.1.2
-    vpc_id: "{{ _ec2_vpc_net_info_id[aws_vpc] }}"
 ...
