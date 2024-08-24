@@ -13,8 +13,8 @@ iam_managed_policy_list:
           Action:
             - s3:*
           Resource:
-            - "arn:aws:s3:::{{ _aws_caller_info_account }}-{{ aws_region }}-kopia"
-            - "arn:aws:s3:::{{ _aws_caller_info_account }}-{{ aws_region }}-kopia/*"
+            - "arn:aws:s3:::{{ _aws_caller_info_account }}-*-kopia"
+            - "arn:aws:s3:::{{ _aws_caller_info_account }}-*-kopia/*"
         - Effect: Allow
           Action:
             - s3:ListAllMyBuckets

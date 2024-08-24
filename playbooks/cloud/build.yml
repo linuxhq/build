@@ -10,6 +10,7 @@
     - linuxhq.aws.iam_user
     - linuxhq.aws.iam_group
     - linuxhq.aws.ec2_vpc_net
+    - linuxhq.aws.ec2_vpc_dhcp_option
     - linuxhq.aws.ec2_vpc_igw
     - linuxhq.aws.ec2_vpc_subnet
     - linuxhq.aws.ec2_vpc_nat_gateway
