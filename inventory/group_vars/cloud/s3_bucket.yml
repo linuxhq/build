@@ -1,0 +1,22 @@
+---
+s3_bucket_list:
+  - name: "{{ _aws_caller_info_account }}-{{ aws_region }}-linuxhq-backups"
+    accelerate_enabled: true
+    policy:
+      Version: '2012-10-17'
+      Statement:
+        - Effect: Deny
+          Action: s3:*
+          Principal: '*'
+          Resource:
+            - "arn:aws:s3:::{{ _aws_caller_info_account }}-{{ aws_region }}-linuxhq-backups"
+            - "arn:aws:s3:::{{ _aws_caller_info_account }}-{{ aws_region }}-linuxhq-backups/*"
+          Condition:
+            Bool:
+              'aws:SecureTransport': false
+    public_access:
+      block_public_acls: true
+      block_public_policy: true
+      ignore_public_acls: true
+      restrict_public_buckets: true
+...
