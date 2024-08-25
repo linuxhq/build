@@ -5,6 +5,8 @@
     - linuxhq.aws.aws_caller_info
     - linuxhq.aws.aws_region_info
     - linuxhq.aws.aws_az_info
+    - linuxhq.aws.iam_account_alias
+    - linuxhq.aws.iam_password_policy
     - linuxhq.aws.iam_managed_policy
     - linuxhq.aws.iam_role
     - linuxhq.aws.iam_user
