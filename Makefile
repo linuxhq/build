@@ -7,7 +7,7 @@ clean:
 	find . -name '*.pyc' -exec $(RM) -rf {} \;
 
 galaxy:
-	venv/bin/ansible-galaxy install -f -r requirements.yml
+	venv/bin/ansible-galaxy install -r requirements.yml
 
 onepassword:
 	HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask --quiet 1password-cli
