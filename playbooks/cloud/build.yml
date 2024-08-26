@@ -5,6 +5,7 @@
     - linuxhq.aws.aws_caller_info
     - linuxhq.aws.aws_region_info
     - linuxhq.aws.aws_az_info
+    - linuxhq.aws.service_quota
     - linuxhq.aws.iam_account_alias
     - linuxhq.aws.iam_password_policy
     - linuxhq.aws.iam_managed_policy
@@ -19,5 +20,6 @@
     - linuxhq.aws.ec2_vpc_subnet
     - linuxhq.aws.ec2_vpc_nat_gateway
     - linuxhq.aws.ec2_vpc_route_table
+    - linuxhq.aws.ec2_key
     - linuxhq.aws.ec2_security_group
 ...
