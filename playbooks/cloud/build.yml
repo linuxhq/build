@@ -22,4 +22,6 @@
     - linuxhq.aws.ec2_vpc_route_table
     - linuxhq.aws.ec2_key
     - linuxhq.aws.ec2_security_group
+    - linuxhq.aws.ec2_transit_gateway
+    - linuxhq.aws.ec2_transit_gateway_vpc_attachment
 ...
