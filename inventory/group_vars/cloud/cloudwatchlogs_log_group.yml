@@ -1,5 +1,5 @@
 ---
 cloudwatchlogs_log_group_list:
-  - name: linuxhq-log-group
+  - name: /linuxhq/all
     retention: 90
 ...
