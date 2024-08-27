@@ -1,5 +1,5 @@
 ---
 ec2_key_list:
-  - name: linuxhq
+  - name: "{{ aws_vpc }}"
     key_material: "{{ openssh_key_pub }}"
 ...
