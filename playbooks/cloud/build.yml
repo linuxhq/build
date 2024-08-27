@@ -14,6 +14,7 @@
     - linuxhq.aws.iam_group
     - linuxhq.aws.s3_bucket
     - linuxhq.aws.s3_lifecycle
+    - linuxhq.aws.ec2_vpc_prefix_list
     - linuxhq.aws.ec2_vpc_net
     - linuxhq.aws.ec2_vpc_dhcp_option
     - linuxhq.aws.ec2_vpc_igw
