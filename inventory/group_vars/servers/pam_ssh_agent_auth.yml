@@ -1,7 +1,8 @@
 ---
-pam_ssh_agent_auth_keys: "{{ authorized_keys |
-                             map(attribute='key') |
-                             list |
-                             unique |
-                             default([]) }}"
+pam_ssh_agent_auth_keys:
+  "{{ authorized_keys |
+      map(attribute='key') |
+      list |
+      unique |
+      d([]) }}"
 ...
