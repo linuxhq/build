@@ -14,13 +14,13 @@
     - linuxhq.aws.iam_group
     - linuxhq.aws.s3_bucket
     - linuxhq.aws.s3_lifecycle
-    - linuxhq.aws.ec2_vpc_prefix_list
     - linuxhq.aws.ec2_vpc_net
     - linuxhq.aws.ec2_vpc_dhcp_option
     - linuxhq.aws.ec2_vpc_igw
     - linuxhq.aws.ec2_vpc_subnet
     - linuxhq.aws.ec2_vpc_nat_gateway
     - linuxhq.aws.ec2_vpc_route_table
+    - linuxhq.aws.ec2_vpc_prefix_list
     - linuxhq.aws.ec2_key
     - linuxhq.aws.ec2_security_group
 ...
