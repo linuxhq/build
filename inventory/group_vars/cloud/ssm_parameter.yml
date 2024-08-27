@@ -58,4 +58,3 @@ ssm_parameter_list:
   - name: /linuxhq/pl/linuxhq
     value: "{{ _ec2_vpc_prefix_list_info_prefix_list_id['linuxhq'] }}"
 ...
-

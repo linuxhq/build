@@ -1,13 +1,15 @@
 # Makefile
 
-all: venv galaxy onepassword
+all: venv galaxy onepassword pre-commit
 
 clean:
 	$(RM) -r venv
-	find . -name '*.pyc' -exec $(RM) -rf {} \;
 
 galaxy:
 	venv/bin/ansible-galaxy install -r requirements.yml
+
+pre-commit:
+	venv/bin/pre-commit install
 
 onepassword:
 	HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask --quiet 1password-cli
