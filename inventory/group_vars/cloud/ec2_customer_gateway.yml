@@ -1,0 +1,8 @@
+---
+ec2_customer_gateway_list:
+  - name: "{{ aws_vpc }}-proton1"
+    ip_address: 146.70.127.253
+
+  - name: "{{ aws_vpc }}-proton2"
+    ip_address: 146.70.127.254
+...
