@@ -7,20 +7,20 @@ cf_dns:
         type: A
         value: 8.8.8.8
 
-      - record: protonmail2._domainkey
+      - record: protonmail._domainkey
         proxied: false
         type: CNAME
-        value: protonmail2.domainkey.dirpmsb4uyjwnznmfizxx6sfvyr6lrbc2oso53nbrsg43u6mic74a.domains.proton.ch
+        value: protonmail.domainkey.d6yew527srqbarnujswxtnmvzszg2pcgihhgiq533r3ms7jvg3muq.domains.proton.ch
 
       - record: protonmail3._domainkey
         proxied: false
         type: CNAME
-        value: protonmail3.domainkey.dirpmsb4uyjwnznmfizxx6sfvyr6lrbc2oso53nbrsg43u6mic74a.domains.proton.ch
+        value: protonmail2.domainkey.d6yew527srqbarnujswxtnmvzszg2pcgihhgiq533r3ms7jvg3muq.domains.proton.ch
 
-      - record: protonmail._domainkey
+      - record: protonmail3._domainkey
         proxied: false
         type: CNAME
-        value: protonmail.domainkey.dirpmsb4uyjwnznmfizxx6sfvyr6lrbc2oso53nbrsg43u6mic74a.domains.proton.ch
+        value: protonmail3.domainkey.d6yew527srqbarnujswxtnmvzszg2pcgihhgiq533r3ms7jvg3muq.domains.proton.ch.
 
       - record: www
         proxied: true
@@ -52,5 +52,5 @@ cf_dns:
       - record: '@'
         proxied: false
         type: TXT
-        value: protonmail-verification=5038331d57c4d6cec7d634383729aa8a5a5e7beb
+        value: protonmail-verification=dafa31fa3a2da0f6e8635d175429e9ee1dcee999
 ...
