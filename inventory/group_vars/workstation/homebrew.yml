@@ -26,9 +26,11 @@ homebrew_cask_apps:
   - 1password-cli
   - discord
   - docker
+  - filen
   - firefox
   - inkscape
   - microsoft-office
+  - mullvadvpn
   - parallels
   - sync
   - vlc
