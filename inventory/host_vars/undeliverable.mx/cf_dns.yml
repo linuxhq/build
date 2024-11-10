@@ -52,5 +52,5 @@ cf_dns:
       - record: '@'
         proxied: false
         type: TXT
-        value: 'sl-verification=rjasmfwfclyilojpahcggfmdzknmwa'
+        value: 'sl-verification=cuayzlhbmgtsxigourlkawtyggiouy'
 ...
