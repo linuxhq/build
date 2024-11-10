@@ -4,7 +4,6 @@
   roles:
     - geerlingguy.dotfiles
     - geerlingguy.mac.homebrew
-    - linuxhq.macos.adguard
     - linuxhq.macos.appzapper
     - linuxhq.macos.hermes
     - linuxhq.macos.irssi

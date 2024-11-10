@@ -32,7 +32,6 @@ homebrew_cask_apps:
   - microsoft-office
   - mullvadvpn
   - parallels
-  - sync
   - vlc
   - zoom
 ...
